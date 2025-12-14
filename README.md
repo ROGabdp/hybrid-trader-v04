@@ -2,6 +2,11 @@
 
 這是一個先進的演算法交易系統，結合了用於價格預測的 **LSTM-SSAM** (Long Short-Term Memory with Sequential Self-Attention) 以及用於交易決策的 **Pro Trader RL** (Reinforcement Learning)。
 
+# v4 版本更新
+- 新增 Rolling LSTM 模型
+- 新增 daily_ops_v4_rolling.py
+- 新增 daily_ops_v4_rolling_retrain.py
+
 ## ✨ 核心特色 (Key Features)
 
 | 特色 | 說明 |

@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Env
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Project Specific - Logs & Runs
+daily_runs/
+daily_runs_v*_*/
+daily_runs_*/
+intraday_runs/
+tensorboard_logs/
+logs/
+.gemini/
+.agent/
+
+# Cache & Temporary Data
+*.pkl
+# 但保留 saved_models 資料夾內的 scaler (必要檔案)
+!saved_models_5d/*.pkl
+!saved_models_multivariate/*.pkl
+*.log
+data/processed/
+cache/
+# Keep raw data if it's small and essential, but ignore large datasets
+# !twii_data_from_2000_01_01.csv (Actually, it will be included by default unless ignored)
+
+# Report & Results (Optional: usually we don't commit test results, but user might want them. 
+# I'll ignore specific heavy folders if needed, but for now allow results/ unless they are huge)
+# data/raw/
+# If raw data is large, ignore it. But twii...csv is 300KB.
+
+# Checkpoints - 保留重要的模型和結果資料夾
+# saved_models_*/ (已移除，以下資料夾需要備份)
+!models_hybrid_v3/
+!models_hybrid_v4/
+!saved_models_multivariate/
+!saved_models_5d/
+!tensorboard_logs_v3/
+!tensorboard_logs_v4/
+!results_hybrid_v3/
+!results_hybrid_v4/
+
+# Rolling LSTM Models
+rolling_lstm_models/
+!rolling_lstm_models/2022/
